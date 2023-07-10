@@ -14,7 +14,7 @@ export const getPokemons = (offset, cb) => {
   return async function (dispatch) {
     const pokemons = (
       await axios.get(
-        `http://localhost:3001/pokemons?offset=${offset}&limit=1200`
+        `https://pokemon-back-v6vx.onrender.com/pokemons?offset=${offset}&limit=200`
       )
     ).data;
     dispatch({ type: GET_POKEMONS, payload: pokemons });
@@ -25,8 +25,9 @@ export const getPokemons = (offset, cb) => {
 };
 export const getPokemonDetail = (id) => {
   return async function (dispatch) {
-    const pokemon = (await axios.get(`http://localhost:3001/pokemons/${id}`))
-      .data;
+    const pokemon = (
+      await axios.get(`https://pokemon-back-v6vx.onrender.com/pokemons/${id}`)
+    ).data;
     dispatch({ type: GET_POKEMON_DETAIL, payload: pokemon });
   };
 };
@@ -34,7 +35,9 @@ export const getPokemonByName = (name) => {
   return async function (dispatch) {
     try {
       const pokemons = (
-        await axios.get(`http://localhost:3001/pokemons?name=${name}`)
+        await axios.get(
+          `https://pokemon-back-v6vx.onrender.com/pokemons?name=${name}`
+        )
       ).data;
       dispatch({ type: GET_POKEMON_BY_NAME, payload: pokemons });
     } catch (error) {
@@ -44,7 +47,9 @@ export const getPokemonByName = (name) => {
 };
 export const getTypes = () => {
   return async function (dispatch) {
-    const types = (await axios.get(`http://localhost:3001/types`)).data;
+    const types = (
+      await axios.get(`https://pokemon-back-v6vx.onrender.com/types`)
+    ).data;
     dispatch({ type: GET_TYPES, payload: types });
   };
 };
