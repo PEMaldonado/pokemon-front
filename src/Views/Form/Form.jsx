@@ -77,7 +77,7 @@ const Form = () => {
       alert("Pokemon creado con éxito, aguarde y será redireccionado");
       dispatch(
         getPokemons(0, () => {
-          navigate("https://pokemon-back-v6vx.onrender.com/home");
+          navigate("/home");
         })
       );
     } catch (err) {
