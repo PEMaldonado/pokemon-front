@@ -1,0 +1,43 @@
+.search input {
+    width:30vh;
+    height: 3.5vh;
+    border-radius: 0.3rem;
+    font-family:"JosefinSans-Regular";
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+ 
+.search button {
+    background-color:rgb(133 90 201);
+    color: white; 
+    width: 15vh;
+    height: 3.4vh;
+    margin-left: 0.7rem ;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-width: 1px;
+    border-color: black;
+    border-radius: 0.3rem;
+    cursor: pointer; 
+    vertical-align: middle;
+}
+
+.search button:hover {
+    transform: scale(1.1);
+}
+
+
+.search{
+    margin-right: 25em;
+    margin-top: 1em;
+}
+
+::placeholder {
+    color: gray;
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.7;
+  }

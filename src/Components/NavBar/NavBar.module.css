@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "JosefinSans-Regular";
+    src: url(../../Utils/JosefinSans-Regular.ttf);
+  }
+
+.nav{
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+ 
+.iconWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    border:10px;
+    width:200px;
+    height:150px;
+  }
+.iconWrapper label{
+  margin-left: 71.5px;
+  font-family: "JosefinSans-Regular";
+  font-weight: bolder;
+  color:rgb(230 188 47);
+  text-shadow: 0 0 1px rgb(148, 113, 0);
+}
+  
+.icon {
+    height: 100%;
+    width: 100%;
+  }
+
+.searchDiv{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 300px;
+    padding-top: 30px;
+    
+}
+
+.createPok {
+  margin-top: 40px;
+  width:200px;
+  height:60px;
+  border-radius: 0.7rem;
+  font-family:"JosefinSans-Regular";
+  font-size: large;
+  font-weight:bold;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color:rgb(230 188 47);
+  color:white
+}
+
+.createPok:hover{
+  transform: scale(1.1);
+}
+
+
+.sorters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    width: fit-content;
+  }
+
+.sorters select {
+    width:200px;
+    height: 24px;
+    font-family: "JosefinSans-Regular";
+    font-size: 0.95rem;
+    justify-content: center;
+    text-align: justify;
+    border-width: 0.1em;
+    border-color: black;
+    border-radius: 0.5em;
+    background-color: rgb(134, 104, 184);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+
+option {
+  cursor: pointer;
+}
+
+.sorters label {
+    margin-top: 15px;
+    font-family: "JosefinSans-Regular";
+    font-size: 0.95em;
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+
+.sorters button {
+  width:200px;
+  height:30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 0.7rem;
+  font-family:"JosefinSans-Regular";
+  font-weight:bold;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sorters button:hover {
+  transform: scale(1.1);
+}
+
+
+.nameButton{
+  background-color: rgb(134, 104, 184);
+  color:white
+}
+
+.attackButton{
+  background-color: rgb(134, 104, 184);
+  color:white
+}

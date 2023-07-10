@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "JosefinSans-Regular";
+  src: url(../../Utils/JosefinSans-Regular.ttf);
+}
+
+body{
+  margin:0
+}
+
+.landing {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../Utils/pikachu.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 1s ease-in-out;
+}
+
+.pokedex {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0077ff;
+  box-shadow: 0px 4px 10px rgba(58, 57, 120, 0.25);
+  cursor:pointer
+}
+
+.pokedex:hover {
+  transform: scale(1.05);
+  background-color: #0055cc;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5)
+}
+
+.developer {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  position:absolute;
+  bottom:0;
+  color:rgb(224, 204, 53);
+  font-family: "JosefinSans-Regular", sans-serif;
+  transition: .3s ease-in-out
+}
+
+.developer a {
+  color: inherit
+}
+
+.developer a:hover{
+ font-size: 1.6rem;
+}

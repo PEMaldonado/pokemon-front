@@ -1,0 +1,117 @@
+.form{
+  width:600px;
+  border: 3px solid rgb(230 188 47);
+  border-radius: 20px;
+  background-color: rgba(230, 187, 47, 0.389);
+  padding: 30px;
+  margin:auto;
+  margin-top:100px;
+  font-family: "calibri";
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.containers label{
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.labelName{
+  padding-right: 4px;
+}
+.containers input{
+  width: fit-content;
+  height: 20px;
+  padding: 4px;
+  border: 1px solid black;
+  font-family: "calibri";
+  font-size: 18px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.containers select {
+  width: 194px;
+  height: 30px;
+  padding: 4px;
+  margin-left: 2px;
+  border: 1px solid black;
+  font-family: "calibri";
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.ranges {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.ranges label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.ranges input {
+  width: 300px;
+  margin-left: 30px;
+}
+.ranges span {
+  margin-left: 10px;
+}
+
+.rangeDiv{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.form button {
+  background-color: #e600738f;
+  border-color: #ff4d94;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 300px;
+  height: 35px;
+  
+}
+  
+.form button:hover {
+  background-color: #ff4d94;
+}
+  
+
+.form button:disabled{
+  cursor: not-allowed;
+  background-color: gray;
+  opacity: 50%
+}
+
+.buttonDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.checkbox{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.checkbox input{
+  width: 50px;
+  height: 16px;
+}
